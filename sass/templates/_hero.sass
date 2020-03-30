@@ -1,0 +1,67 @@
+.hero
+  position: relative
+  padding-top: 5.357rem
+  display: flex
+  &__row
+    display: flex
+    align-items: center
+    margin-top: 10.071rem
+  &__img
+    max-width: 54.5rem
+    display: flex
+    padding: 1.517rem 0 3rem 0
+    margin-left: -7.143rem
+    margin-right: -28.571rem
+    z-index: -5
+    background: url('../img/hero-bg-1.png') no-repeat center
+    &-margin
+      margin-left: 2rem
+  &__text
+    max-width: 40.3rem
+    margin-bottom: 2.857rem
+    color: $heroText
+    font-size: 1.429rem
+    font-weight: 300
+    line-height: 2.071rem
+  &__title
+    margin-bottom: 3.357rem
+  &__socials
+    position: absolute
+    left: 0
+    top: 0
+  &__col-40
+    background: url('../img/hero-bg-1.png') no-repeat center
+.title
+  color: $title
+  font-size: 4.429rem
+  font-weight: 700
+  line-height: 5.429rem
+  max-width: 50rem
+  &--red
+    color: $red
+.socials
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-left: 4rem
+  &::before
+    content: ''
+    width: 4px
+    height: 620px
+    border-radius: 2px
+    background-color: $red
+    margin-bottom: 2.714rem
+    margin-top: 10rem
+  &__link
+    margin-bottom: 2.143rem
+    &:last-child
+      margin-bottom: 0
+.background
+  background: url('../img/bg-1.png') no-repeat
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  z-index: -10
+
