@@ -792,6 +792,9 @@ img {
   .contacts__button {
     display: none;
   }
+  .statistics {
+    background-position: 0 50%;
+  }
   .statistics__row {
     flex-wrap: wrap;
     padding: 3rem 0;
