@@ -1,6 +1,5 @@
 @media screen and ( max-width: 1555px )
   .hero
-    background-size: contain
     &__img
       margin-top: 5rem
       img
@@ -107,6 +106,10 @@
       margin-top: 1rem
       font-size: 0.9rem
       line-height: 1rem
+    &__card
+      &:first-child
+        .statistics__value
+          letter-spacing: -0.3rem
   .video
     margin-top: -12rem
 @media screen and ( max-width: 570px )
@@ -125,8 +128,12 @@
       flex-basis: 50%
       &:first-child
         margin-right: 0
+        .statistics__value
+          margin-left: 0
       &:nth-child(3)
         margin-left: 0
+      &:last-child
+        margin-right: 0
     &__value
       margin-top: 2rem
     &__text

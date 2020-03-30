@@ -457,6 +457,7 @@ img {
   margin-bottom: 5.214rem;
   display: flex;
   background: url("../img/hero-bg.png") no-repeat;
+  background-size: contain;
 }
 
 .hero__row {
@@ -505,7 +506,7 @@ img {
 
 .hero-background-text {
   position: absolute;
-  top: 44.4%;
+  top: 55.8%;
   left: 8.6%;
   width: 100%;
   height: 100%;
@@ -576,11 +577,20 @@ img {
 }
 
 .statistics__card:first-child {
-  margin-right: 0.7rem;
+  margin-right: 0.4rem;
+}
+
+.statistics__card:first-child .statistics__value {
+  letter-spacing: -0.8rem;
+  margin-left: -0.7rem;
 }
 
 .statistics__card:nth-child(3) {
-  margin-left: -0.7rem;
+  margin-left: -0.5rem;
+}
+
+.statistics__card:last-child {
+  margin-right: 0.2rem;
 }
 
 .statistics__value {
@@ -621,9 +631,6 @@ img {
 }
 
 @media screen and (max-width: 1555px) {
-  .hero {
-    background-size: contain;
-  }
   .hero__img {
     margin-top: 5rem;
   }
@@ -767,6 +774,9 @@ img {
     font-size: 0.9rem;
     line-height: 1rem;
   }
+  .statistics__card:first-child .statistics__value {
+    letter-spacing: -0.3rem;
+  }
   .video {
     margin-top: -12rem;
   }
@@ -792,8 +802,14 @@ img {
   .statistics__card:first-child {
     margin-right: 0;
   }
+  .statistics__card:first-child .statistics__value {
+    margin-left: 0;
+  }
   .statistics__card:nth-child(3) {
     margin-left: 0;
+  }
+  .statistics__card:last-child {
+    margin-right: 0;
   }
   .statistics__value {
     margin-top: 2rem;
