@@ -81,6 +81,9 @@
   .services
     &__card
       padding-top: 2.1rem
+  .price
+    &__container
+      background: $light url('../img/price-image-2.png') no-repeat right
 @media screen and ( min-width: 992px )
   .button
     transition: color 0.3s
@@ -157,6 +160,12 @@
       &:nth-child(6)
         margin-right: 0
         max-width: none
+  .price
+    &__row
+      min-width: 100%
+    &__container
+      background: $light
+
   .services
     &__row
       justify-content: space-around
@@ -283,6 +292,17 @@
         margin-bottom: 3.55rem
       &:nth-child(6)
         max-width: 23.5rem
+  .price
+    &__heading
+      font-size: 1.9rem
+      margin-left: 0
+    &__form
+      margin-left: 1.5rem
+      margin-right: 1.5rem
+    &__input
+      font-size: 1rem
+    &__label
+      font-size: 1.1rem
   .services
     &__card
       flex-basis: 100%
