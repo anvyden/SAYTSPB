@@ -339,7 +339,7 @@ template {
 }
 
 .button {
-  padding: 1.071rem 2.25rem;
+  padding: 0.88rem 2.1rem;
   border: none;
   border-radius: 22px;
   outline: none;
@@ -349,6 +349,7 @@ template {
   font-size: 1.143rem;
   line-height: 1rem;
   font-weight: 500;
+  border: 2px solid #ff5a3c;
 }
 
 .container {
@@ -451,6 +452,10 @@ img {
   margin-right: 3rem;
 }
 
+.contacts__button {
+  margin-top: 0.05rem;
+}
+
 .hero {
   position: relative;
   padding-bottom: 12.786rem;
@@ -500,7 +505,7 @@ img {
 }
 
 .hero__button {
-  padding: 1.3rem 2.857rem;
+  padding: 1.2rem 2.71rem;
   line-height: 0.8rem;
 }
 
@@ -700,6 +705,20 @@ img {
   }
   .statistics {
     background-position: 35% 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button {
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: #ffffff;
+    color: #ff5a3c;
+  }
+  .nav__item:hover {
+    border-bottom: 2px solid #ff5a3c;
   }
 }
 

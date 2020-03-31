@@ -52,6 +52,17 @@
       margin-right: 1rem
   .statistics
     background-position: 35% 80%
+@media screen and ( min-width: 992px )
+  .button
+    transition: color 0.3s
+    transition: background-color 0.3s
+    &:hover
+      background-color: $light
+      color: $red
+  .nav
+    &__item
+      &:hover
+        border-bottom: 2px solid $red
 @media screen and ( max-width: 992px )
   .nav
     display: none
