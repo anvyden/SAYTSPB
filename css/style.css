@@ -1183,6 +1183,7 @@ img {
   }
   .price__container {
     background: #ffffff;
+  }
   .services__row {
     justify-content: space-around;
   }
@@ -1347,6 +1348,7 @@ img {
   }
   .price__label {
     font-size: 1.1rem;
+  }
   .services__card {
     flex-basis: 100%;
   }
