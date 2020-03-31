@@ -157,6 +157,12 @@
       &:nth-child(6)
         margin-right: 0
         max-width: none
+  .services
+    &__row
+      justify-content: space-around
+    &__card
+      width: auto
+      flex-basis: 45%
 @media screen and ( max-width: 760px )
   html
     font-size: 11px
@@ -202,6 +208,22 @@
       //   max-width: 20.55rem
       // &:nth-child(6)
       //   max-width: 20.55rem
+  .services
+    &__card
+      &:nth-child(3)
+        .card__title
+          margin-bottom: 0.8rem
+      &:nth-child(4)
+        .card__title
+          margin-bottom: 0.8rem
+      &:nth-child(5)
+        .card__title
+          margin-bottom: 0.8rem
+      .card__text
+        font-size: 1rem
+      .card__title
+        margin-bottom: 0.8rem
+        font-size: 1.1rem
 @media screen and ( max-width: 570px )
   .container
     width: 90%
@@ -261,4 +283,7 @@
         margin-bottom: 3.55rem
       &:nth-child(6)
         max-width: 23.5rem
+  .services
+    &__card
+      flex-basis: 100%
         
