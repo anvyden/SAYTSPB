@@ -240,7 +240,7 @@
         <!-- Slider main container -->
         <div class="swiper-container cases-swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper swiper-no-swiping">
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="cases-swiper__container">
@@ -403,30 +403,62 @@
         <!-- Slider main container -->
         <div class="swiper-container comments-swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper swiper-no-swiping">
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="comments-swiper__container">
-                  <p class="comments-swiper__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <p class="comments-swiper__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
                     Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    reprehenderit&nbsp;in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <div class="comments-swiper__user user">
                       <img src="img/comments/comments-photo.jpg" alt="Фотография клиента" class="user__photo">
-                      <h4 class="user__name">Иванна Иванова</h4>
-                      <p class="user__text">Сбербанк, CEO</p>
+                      <div class="user__text">
+                        <h4 class="user__name">Иванна Иванова</h4>
+                        <p class="user__company">Сбербанк, CEO</p>
+                      </div>
                     </div>
                     <!-- /.comments-swiper__user -->
                 </div>
                 <!-- /.comments-swiper__container -->
               </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">
+                <div class="comments-swiper__container">
+                  <p class="comments-swiper__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit&nbsp;in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="comments-swiper__user user">
+                      <img src="img/comments/comments-photo.jpg" alt="Фотография клиента" class="user__photo">
+                      <div class="user__text">
+                        <h4 class="user__name">Иванна Иванова</h4>
+                        <p class="user__company">Сбербанк, CEO</p>
+                      </div>
+                    </div>
+                    <!-- /.comments-swiper__user -->
+                </div>
+                <!-- /.comments-swiper__container -->
+              </div>
+              <div class="swiper-slide">
+                <div class="comments-swiper__container">
+                  <p class="comments-swiper__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit&nbsp;in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="comments-swiper__user user">
+                      <img src="img/comments/comments-photo.jpg" alt="Фотография клиента" class="user__photo">
+                      <div class="user__text">
+                        <h4 class="user__name">Иванна Иванова</h4>
+                        <p class="user__company">Сбербанк, CEO</p>
+                      </div>
+                    </div>
+                    <!-- /.comments-swiper__user -->
+                </div>
+                <!-- /.comments-swiper__container -->
+              </div>
           </div>
-
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev comments-swiper-button-prev"></div>
+          <div class="swiper-button-next comments-swiper-button-next"></div>
         </div>
+        <button class="button comments__button">Читать еще</button>
       </div>
       <!-- /.container -->
     </section>

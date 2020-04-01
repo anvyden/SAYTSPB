@@ -22,6 +22,11 @@
       margin-left: 0
     &__text
       margin-left: auto
+  .comments
+    &__heading
+      margin-left: 0
+    &__text
+      margin-left: auto
 @media screen and ( max-width: 1310px )
   .hero
     padding-bottom: 15rem
@@ -41,6 +46,17 @@
       &-button-next
         top: 54%
         right: 5%
+  .comments
+    &-swiper
+      position: static
+      &__text
+        margin-left: 0
+      &-button-prev
+        top: 52%
+        left: 8.5%
+      &-button-next
+        top: 52%
+        right: 8.5%
 @media screen and ( max-width: 1250px )
   html
     font-size: 12px
@@ -116,6 +132,19 @@
       margin: 0 auto
     &__col-45
       margin: 0 auto
+  .comments
+    &-swiper
+      &-button-prev
+        left: 13%
+        width: 15px
+      &-button-next
+        right: 13%
+        width: 15px
+      &__text
+        margin-left: auto
+        margin-right: auto 
+        font-size: 1.3rem
+        max-width: 55.8rem
 @media screen and ( min-width: 992px )
   .button
     transition: color 0.3s
@@ -218,6 +247,14 @@
         font-size: 0.9rem
     &__col-45
       width: 46%
+  .comments
+    &-swiper
+      &__text
+        font-size: 1.1rem
+      &-button-prev
+        left: 6.8%
+      &-button-next
+        right: 6.8%
 @media screen and ( max-width: 760px )
   html
     font-size: 11px
@@ -307,6 +344,11 @@
     width: 100%
   .col-45
     width: 100%
+  .comments
+    &-swiper
+      &__text
+        font-size: 1rem
+        max-width: 43rem
 @media screen and ( max-width: 570px )
   .container
     width: 90%
@@ -383,6 +425,8 @@
   .cases
     &__button
       margin-top: 2rem
+    &__section-title
+      margin-bottom: 2.5rem
     &-swiper
       &__container
         // max-width: 30.727rem
@@ -395,4 +439,20 @@
         right: 4px
       &-text
         font-size: 1rem
+  .comments
+    &__button
+      margin-top: 3.5rem
+    &__section-title
+      margin-bottom: 2.5rem
+    &-swiper
+      &__text
+        max-width: 30.727rem
+      &-button-prev
+        width: 12px
+        top: 57%
+        left: 4%
+      &-button-next
+        width: 12px
+        top: 57%
+        right: 4%
         
