@@ -17,6 +17,11 @@
     &__card
       &-title
         font-size: 1.5rem
+  .cases
+    &__heading
+      margin-left: 0
+    &__text
+      margin-left: auto
 @media screen and ( max-width: 1310px )
   .hero
     padding-bottom: 15rem
@@ -27,6 +32,15 @@
     &__card
       .card__text
         font-size: 1.05rem
+  .cases
+    &-swiper
+      position: static
+      &-button-prev
+        top: 55%
+        left: 5%
+      &-button-next
+        top: 54%
+        right: 5%
 @media screen and ( max-width: 1250px )
   html
     font-size: 12px
@@ -84,6 +98,24 @@
   .price
     &__container
       background: $light url('../img/price-image-2.png') no-repeat right
+  .cases
+    &-swiper
+      &-button-prev
+        left: 6.8%
+        width: 15px
+      &-button-next
+        right: 6.8%
+        width: 15px
+      &-text
+        font-size: 1.1rem
+    &-statistics
+      &__heading
+        max-width: 24rem
+        font-size: 1.1rem
+    &__col-50
+      margin: 0 auto
+    &__col-45
+      margin: 0 auto
 @media screen and ( min-width: 992px )
   .button
     transition: color 0.3s
@@ -165,13 +197,27 @@
       min-width: 100%
     &__container
       background: $light
-
   .services
     &__row
       justify-content: space-around
     &__card
       width: auto
       flex-basis: 45%
+  .cases
+    &-swiper
+      &-text
+        font-size: 1rem
+      &__result
+        margin-bottom: 1rem
+      &__dynamic
+        margin-bottom: 1rem
+    &-statistics
+      &__heading
+        font-size: 1rem
+      &__source
+        font-size: 0.9rem
+    &__col-45
+      width: 46%
 @media screen and ( max-width: 760px )
   html
     font-size: 11px
@@ -218,6 +264,7 @@
       // &:nth-child(6)
       //   max-width: 20.55rem
   .services
+    padding-bottom: 5rem
     &__card
       &:nth-child(3)
         .card__title
@@ -226,6 +273,7 @@
         .card__title
           margin-bottom: 0.8rem
       &:nth-child(5)
+        margin-bottom: 0
         .card__title
           margin-bottom: 0.8rem
       .card__text
@@ -233,6 +281,32 @@
       .card__title
         margin-bottom: 0.8rem
         font-size: 1.1rem
+  .cases
+    &-swiper
+      &-button-prev
+        top: 50%
+        left: 8%
+      &-button-next
+        top: 50%
+        right: 8%
+      &__row
+        flex-direction: column
+      &__container
+        padding: 1rem 1.571rem 1.5rem 2.5rem
+        max-height: inherit
+        max-width: 40rem
+        background: url('../img/cases/cases-bg.png') no-repeat left / cover
+      &__result
+        margin-top: 0.5rem
+    &-statistics
+      &__heading
+        margin-left: 0
+      &__source
+        margin-left: 0
+  .col-50
+    width: 100%
+  .col-45
+    width: 100%
 @media screen and ( max-width: 570px )
   .container
     width: 90%
@@ -306,4 +380,19 @@
   .services
     &__card
       flex-basis: 100%
+  .cases
+    &__button
+      margin-top: 2rem
+    &-swiper
+      &__container
+        // max-width: 30.727rem
+        padding: 1rem 1rem 1.5rem 1rem
+      &-button-prev
+        width: 12px
+        left: 4px
+      &-button-next
+        width: 12px
+        right: 4px
+      &-text
+        font-size: 1rem
         
