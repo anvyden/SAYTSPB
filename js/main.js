@@ -1,9 +1,16 @@
 $(document).ready(function () {
-  var mySwiper = new Swiper ('.swiper-container', {
+  var casesSwiper = new Swiper ('.cases-swiper', {
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.cases-swiper-button-next',
+      prevEl: '.cases-swiper-button-prev',
+    },
+  })
+  var commentsSwiper = new Swiper ('.comments-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.comments-swiper-button-next',
+      prevEl: '.comments-swiper-button-prev',
     },
   })
 });
