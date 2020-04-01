@@ -13,4 +13,15 @@ $(document).ready(function () {
       prevEl: '.comments-swiper-button-prev',
     },
   })
+  var newsSwiper = new Swiper ('.news-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.news-swiper-button-next',
+      prevEl: '.news-swiper-button-prev',
+    },
+  })
+  var newsNext = $('.news-swiper-button-next');
+  var newsPrev = $('.news-swiper-button-prev');
+  var newsPositionPrev = newsPrev.position();
+  newsNext.css('left', newsPositionPrev.left + newsPrev.width() + 22.5)
 });
