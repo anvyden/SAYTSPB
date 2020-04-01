@@ -1,0 +1,93 @@
+.news
+  padding-top: 4.79rem
+  background-color: #e3fbdd
+  &__section-title
+    margin-bottom: 3.9rem
+  &__text
+    margin-left: 13.35rem
+    margin-top: 1.9rem
+  &__heading
+    margin-left: 1.6rem
+  &-swiper
+    &__container
+      position: absolute
+      bottom: 0
+      right: 3.5px
+      width: 100%
+      height: 100%
+      max-width: 39.286rem
+      max-height: 24.214rem
+      padding: 2.571rem 3.714rem 2.786rem 2.8rem
+      box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05);
+      background-color: $light
+      border-radius: 5px
+      z-index: 10
+    &__heading
+      margin: 0
+      margin-left: 0.1rem
+      margin-bottom: 1.9rem
+      font-size: 1.429rem
+      line-height: 1.286rem
+      font-weight: 500
+      color: #121111
+    &__text
+      margin: 0
+      margin-left: 0.03rem
+      margin-bottom: 2.9rem
+      font-size: 1.143rem
+      line-height: 1.881rem
+      font-weight: 300
+      color: #201f1f
+    &-slide
+      padding: 0 2px
+      min-height: 41.714rem
+    &-button-next
+      background: url('../img/news/news-next.png') no-repeat center / contain
+      width: 56px
+      height: 32px
+      top: auto
+      bottom: 5.72%
+      &::after
+        display: none
+    &-button-prev
+      background: url('../img/news/news-prev.png') no-repeat center / contain
+      width: 48px
+      height: 28px
+      top: auto
+      left: 8px
+      bottom: 6.05%
+      &::after
+        display: none
+    &__button
+      margin-left: 0.15rem
+      padding: 1.1rem 3.9rem
+.calendar
+  &__container
+    width: 100%
+    height: 100%
+    padding-top: 1.714rem
+    max-width: 57.143rem
+    min-height: 32.929rem 
+    background: $red url('../img/news/news-image.jpg') no-repeat center / cover
+  &__day
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    max-width: 4rem
+    min-height: 4.714rem
+    margin-left: 1.5rem
+    padding: 1.143rem 1.071rem 1.071rem 1.071rem
+    background-color: $red
+    border-radius: 5px
+  &__number
+    display: block
+    margin-top: -0.35rem
+    margin-bottom: 0.1rem
+    font-size: 1.429rem
+    font-weight: 700
+    color: $light
+  &__month
+    display: block
+    font-size: 1rem
+    font-weight: 400
+    color: $light
