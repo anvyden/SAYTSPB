@@ -14,10 +14,10 @@
       <div class="menu">
         <div class="logo menu__logo"><a href="#" class="logo__text"><img src="img/logo.png" alt="Логотип"><span class="logo__link">SAYTSPB</span></a></div>
         <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Продвижение</a>
-          <a href="#" class="nav__item">Аудит</a>
-          <a href="#" class="nav__item">Цены</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#services" class="nav__item">Продвижение</a>
+          <a href="#cases" class="nav__item">Аудит</a>
+          <a href="#price" class="nav__item">Цены</a>
+          <a href="#contacts" class="nav__item">Контакты</a>
         </nav>
         <!-- /.nav menu__nav -->
         <div class="contacts menu__contacts">
@@ -30,11 +30,11 @@
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="socials hero__socials">
         <a href="#" target="_blank" class="socials__link"><img src="img/WhatsApp.png" alt="WhatsApp"></a>
         <a href="#" target="_blank" class="socials__link"><img src="img/Viber.png" alt="Viber"></a>
-        <a href="#" target="_blank" class="socials__link"><img src="img/Email.png" alt="Email"></a>
+        <a href="mailto:denis.quesadillias4@gmail.com" target="_blank" class="socials__link"><img src="img/Email.png" alt="Email"></a>
       </div>
       <div class="hero-background-text"></div>
       <div class="container">
@@ -155,7 +155,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section advantages -->
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="container">
         <div class="section-title services__section-title">
           <h2 class="section-title__heading">Наши Услуги</h2>
@@ -195,7 +195,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section services -->
-    <div class="price">
+    <div class="price" id="price">
       <div class="container price__container">
         <div class="price__row">
           <h3 class="price__heading">Узнать стоимость</h3>
@@ -230,7 +230,7 @@
       </div>
     </div>
     <!-- /.price -->
-    <section class="section cases">
+    <section class="section cases" id="cases">
       <div class="container">
         <div class="section-title cases__section-title">
           <h2 class="section-title__heading cases__heading">Наши Кейсы</h2>
@@ -529,14 +529,14 @@
       <!-- /.container -->
     </section>
     <!-- /.section news -->
-    <div class="contacts-block">
+    <div class="contacts-block" id="contacts">
       <div class="container">
         <div class="row contacts-block__row">
           <div class="contacts-block__content contacts-content">
             <h3 class="contacts-content__heading">Остались вопросы? 
               Напишите&nbsp;нам!
               Отправте&nbsp;Ваше&nbsp;сообщение
-              через форму или <span class="contacts-content__word">e-mail</span>.</h3>
+              через форму или <a href="#" class="contacts-content__word">e-mail</a>.</h3>
               <div class="contacts-content__row">
                 <div class="contacts-content__adress adress">
                   <h4 class="adress__heading">Адресс</h4>
@@ -561,27 +561,27 @@
           <div class="contacts-form">
             <form action="" class="form contacts-block__form">
               <div class="contacts-block__input-group">
-                <label for="price-user-name" class="label form__label contacts-block__label">ИМЯ</label>
+                <label for="contacts-user-name" class="label form__label contacts-block__label">ИМЯ</label>
                 <!-- /.label form__label price__label -->
-                <input type="text" autocomplete="off" class="input form__input contacts-block__input" id="price-user-name" placeholder="Иван Иванов">
+                <input type="text" autocomplete="off" class="input form__input contacts-block__input" id="contacts-user-name" placeholder="Иван Иванов">
               </div>
               <!-- /.price__input-group -->
               <div class="contacts-block__input-group">
-                <label for="price-user-email" class="label form__label contacts-block__label">E-MAIL</label> 
+                <label for="contacts-user-email" class="label form__label contacts-block__label">E-MAIL</label> 
                 <!-- /.label form__label price__label -->
-                <input type="email" autocomplete="off" class="input form__input contacts-block__input" id="price-user-email" placeholder="ivanov@gmail.com">
+                <input type="email" autocomplete="off" class="input form__input contacts-block__input" id="contacts-user-email" placeholder="ivanov@gmail.com">
               </div>
               <!-- /.price__input-group -->
               <div class="contacts-block__input-group">
-                <label for="price-user-adress" class="label form__label contacts-block__label">ТЕЛЕФОН</label> 
+                <label for="contacts-user-phone" class="label form__label contacts-block__label">ТЕЛЕФОН</label> 
                 <!-- /.label form__label price__label -->
-                <input type="text" autocomplete="off" class="input form__input contacts-block__input" id="price-user-adress" placeholder="+7 999 888-88-88">
+                <input type="tel" autocomplete="off" class="input form__input contacts-block__input" id="contacts-user-phone" placeholder="+7 999 888-88-88">
               </div>
               <!-- /.price__input-group -->
               <div class="contacts-block__input-group">
-                <label for="price-user-message" class="label form__label contacts-block__label">СООБЩЕНИЕ</label> 
+                <label for="contacts-user-message" class="label form__label contacts-block__label">СООБЩЕНИЕ</label> 
                 <!-- /.label form__label price__label -->
-                <input type="text" autocomplete="off" class="input form__input contacts-block__input" id="price-user-message" placeholder="Введите Ваше сообщение">
+                <input type="text" autocomplete="off" class="input form__input contacts-block__input" id="contacts-user-message" placeholder="Введите Ваше сообщение">
               </div>
               <!-- /.price__input-group -->
               <button class="button contacts-block__button">Отправить</button>
@@ -598,11 +598,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__logo">
-        <img src="img/logo.png" alt="Логотип" class="footer__logo-img">
+        <a href="#hero" class="footer__logo-link"><img src="img/footer-logo.png" alt="Логотип" class="footer__logo-img"></a>
       </div>
-      <h2 class="footer__company-name">SAYTSPB</h2>
+      <h2 class="footer__company-name"><a href="#hero" class="footer__company-link">SAYTSPB</a></h2>
       <div class="footer__line"></div>
-      <p class="footer__copyright">Copyright © 2019. Все права защищены</p>
+      <p class="footer__copyright"><a href="#" class="footer__copyright-link">Copyright © 2019. Все права защищены</a></p>
     </div>
     <!-- /.container -->
   </footer>

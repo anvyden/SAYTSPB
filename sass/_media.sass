@@ -198,6 +198,11 @@
           &:last-of-type
             margin-bottom: 2rem
 @media screen and ( min-width: 992px )
+  .logo
+    &__link
+      transition: color 0.3s
+      &:hover
+        color: $red
   .button
     transition: color 0.3s
     transition: background-color 0.3s
@@ -206,8 +211,91 @@
       color: $red
   .nav
     &__item
+      position: relative
+      &::after
+        display: block
+        position: absolute
+        left: 50%
+        bottom: -8.5px
+        width: 0%
+        content: ''
+        height: 2px
+        background-color: $red 
+        -webkit-transition: width 0.3s ease-in-out
+        -moz--transition: width 0.3s ease-in-out
+        transition: width 0.3s ease-in-out
+        -webkit-transform: translateX(-50%)
+        -moz-transform: translateX(-50%)
+        transform: translateX(-50%)
       &:hover
-        border-bottom: 2px solid $red
+        &::after
+          width: 100%
+  .phone
+    transition: color 0.3s
+    &:hover
+      color: $red
+  .socials
+    &__link
+      position: relative
+      &::after
+        display: block
+        position: absolute
+        left: 50%
+        bottom: -8.5px
+        width: 0%
+        content: ''
+        height: 2px
+        background-color: $red 
+        -webkit-transition: width 0.3s ease-in-out
+        -moz--transition: width 0.3s ease-in-out
+        transition: width 0.3s ease-in-out
+        -webkit-transform: translateX(-50%)
+        -moz-transform: translateX(-50%)
+        transform: translateX(-50%)
+      &:hover
+        &::after
+          width: 100%
+  .comments
+    &__link
+      transition: color 0.2s
+      transition: border-color 0.3s
+      &:hover
+        color: #63bb53
+        border-color: #63bb53
+  .news
+    &-swiper
+      &-button-next
+        &:hover
+          transform: rotate(0deg)
+          background: url(../img/news/news-next.png) no-repeat center / cover
+      &-button-prev
+        &:hover
+          transform: rotate(180deg)
+          background: url(../img/news/news-next.png) no-repeat center / cover
+  .contacts
+    &-content
+      &__word
+        transition: border-color 0.3s
+        transition: color 0.2s
+        &:hover
+          color: #63bb53
+          border-color: #63bb53
+    &-block
+      &__button
+        transition: background-color 0.3s
+        transition: color 0.3s
+        &:hover
+          background-color: #d8f3d1
+          color: $black
+  .footer
+    &__company-link
+      transition: color 0.3s
+      &:hover
+        color: $red
+    &__copyright-link
+      transition: color 0.3s
+      &:hover
+        color: $red
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -279,6 +367,7 @@
     &__container
       background: $light
   .services
+    background: #e3fbdd
     &__row
       justify-content: space-around
     &__card
@@ -334,6 +423,7 @@
   html
     font-size: 11px
   .hero
+    background: url('../img/hero-bg-1.png') no-repeat
     padding-bottom: 10rem
     &__content
       width: 100%
@@ -441,7 +531,7 @@
         transform: translate(-50%, 0)
         bottom: 2px
       &-button-next
-        bottom: 0
+        bottom: 2px
   .contacts
     &-block
       &__row
@@ -609,7 +699,7 @@
         transform: translate(-100%, 0)
         bottom: 16px
       &-button-next
-        bottom: 14px
+        bottom: 16px
   .calendar
     &__container
       min-height: 25rem

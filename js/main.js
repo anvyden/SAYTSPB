@@ -24,4 +24,13 @@ $(document).ready(function () {
   var newsPrev = $('.news-swiper-button-prev');
   var newsPositionPrev = newsPrev.position();
   newsNext.css('left', newsPositionPrev.left + newsPrev.width() + 22.5)
+
+
+  // Плавная прокрутка при клике на ссылки меню
+  $('.nav__item, .logo__text, .footer__logo-link, .footer__company-link').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        idTop = $(id).offset().top;
+      $('body, html').animate({scrollTop: idTop}, 1300);
+  });
 });
