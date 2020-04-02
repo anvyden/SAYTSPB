@@ -22,7 +22,7 @@
         <!-- /.nav menu__nav -->
         <div class="contacts menu__contacts">
           <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
-          <button class="button contacts__button">Заказать звонок</button>
+          <button class="button contacts__button" data-toggle="modal">Заказать звонок</button>
         </div>
         <!-- /.contacts menu__contacts -->
       </div>
@@ -42,7 +42,7 @@
             <div class="hero__content">
               <h1 class="title hero__title">Продвижение Сайтов <span class="title--red">в Санкт-Петербурге</span></h1>
               <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-              <button class="button hero__button">Обратный звонок</button>
+              <button class="button hero__button" data-toggle="modal">Обратный звонок</button>
             </div>
           <div class="hero__img">
             <img src="img/hero-img.png" class="hero__img-margin" alt="Seo">
@@ -607,6 +607,23 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <form action="" class="form modal__form">
+        <div class="modal__input-group">
+          <input type="text" autocomplete="off" class="input form__input modal__input" id="modal-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.price__input-group -->
+        <div class="modal__input-group">
+          <input type="tel" autocomplete="off" class="input form__input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.price__input-group -->
+        <button class="button modal__button">Отправить</button>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/main.js"></script>

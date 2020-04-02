@@ -33,4 +33,25 @@ $(document).ready(function () {
         idTop = $(id).offset().top;
       $('body, html').animate({scrollTop: idTop}, 1300);
   });
+
+  // Модальное окно
+  var modal = $('.modal'),
+      modalBtn = $('[data-toggle=modal]')
+      modalBtn.on('click', function () {
+        modal.toggleClass('modal--visible');
+      });
+      modal.on('click', function (event) {
+        if ($(event.target).is('modal__dialog'))
+        event.stopPropagation();
+        else if ($(event.target).is('.modal'))
+        modal.toggleClass('modal--visible');
+      });
+      $(document).on('keydown', function(event) {
+        if (event.keyCode === 27 && $('.modal').hasClass('modal--visible'))
+        modal.toggleClass('modal--visible');
+      });
+
+  // Окно благодарности
+  // thanks = $('.thanks')
+  // closeBtnThanks = $('.thanks__close')
 });
