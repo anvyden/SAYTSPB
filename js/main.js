@@ -114,11 +114,11 @@ $(document).ready(function () {
           if ($('.thanks').hasClass('thanks--visible')) {
             modal.removeClass('modal--visible');
           }
+          ym(94722919,'reachGoal','submitForm'); return true;
         },
         error: function (response) {
-          console.error('Ошибка запроса');
+          console.error('Ошибка запроса' + response);
         }
-        // ym(61243786,'reachGoal','submitForm'); return true;
       });
     },
   });
@@ -175,11 +175,11 @@ $(document).ready(function () {
           if ($('.thanks').hasClass('thanks--visible')) {
             modal.removeClass('modal--visible');
           }
+          ym(94722919,'reachGoal','submitForm'); return true;
         },
         error: function (response) {
-          console.error('Ошибка запроса');
+          console.error('Ошибка запроса' + response);
         }
-      // ym(61243786,'reachGoal','submitForm'); return true;
       });
     },
   });
@@ -221,11 +221,11 @@ $(document).ready(function () {
           if ($('.thanks').hasClass('thanks--visible')) {
             modal.removeClass('modal--visible');
           }
+          ym(94723897,'reachGoal','callBack'); return true;
         },
         error: function (response) {
-          console.error('Ошибка запроса');
+          console.error('Ошибка запроса' + response);
         }
-      // ym(61243786,'reachGoal','submitForm'); return true;
       });
     },
   });
