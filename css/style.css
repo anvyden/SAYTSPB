@@ -2703,7 +2703,7 @@ img {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .input {
     line-height: normal;
-    padding: 0.3rem 0;
+    padding: 0.4rem 0;
   }
   .input::-ms-clear {
     display: none;
