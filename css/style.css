@@ -1721,6 +1721,7 @@ img {
 
 .thanks__dialog {
   position: relative;
+  width: 90%;
   max-width: 47rem;
   border-radius: 25px;
   background-color: #ffffff;
@@ -2683,6 +2684,18 @@ img {
     font-size: 1rem;
   }
   .time__work-time {
+    font-size: 1rem;
+  }
+  .modal__dialog {
+    padding: 2rem;
+  }
+  .thanks__dialog {
+    padding: 2rem;
+  }
+  .thanks__heading {
+    font-size: 1.2rem;
+  }
+  .thanks__text {
     font-size: 1rem;
   }
 }

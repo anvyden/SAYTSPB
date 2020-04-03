@@ -241,7 +241,7 @@ $(document).ready(function () {
         });
     } else {
       $('.swiper-wrapper').each(function () {
-        $(this).addClass('swiper-no-swiping');
-        });
+      $(this).addClass('swiper-no-swiping');
+      });
     }
 });
