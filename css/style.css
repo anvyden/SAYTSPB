@@ -1648,7 +1648,7 @@ img {
 
 .modal__dialog {
   position: relative;
-  max-width: 26.5rem;
+  max-width: 35rem;
   background: #ffffff;
   padding: 2.786rem 3.571rem 2rem 3.571rem;
 }
@@ -2057,7 +2057,7 @@ img {
   }
   .comments__link {
     transition: color 0.2s;
-    transition: border-color 0.3s;
+    transition: border-color 0.2s;
   }
   .comments__link:hover {
     color: #63bb53;
@@ -2072,7 +2072,7 @@ img {
     background: url(../img/news/news-next.png) no-repeat center/cover;
   }
   .contacts-content__word {
-    transition: border-color 0.3s;
+    transition: border-color 0.2s;
     transition: color 0.2s;
   }
   .contacts-content__word:hover {
@@ -2697,5 +2697,18 @@ img {
   }
   .thanks__text {
     font-size: 1rem;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .input {
+    line-height: normal;
+    padding: 0.3rem 0;
+  }
+  .input::-ms-clear {
+    display: none;
+  }
+  .modal__input {
+    padding: 0.7rem 2.93rem 0.7rem 1.15rem;
   }
 }

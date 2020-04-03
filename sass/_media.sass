@@ -259,7 +259,7 @@
   .comments
     &__link
       transition: color 0.2s
-      transition: border-color 0.3s
+      transition: border-color 0.2s
       &:hover
         color: #63bb53
         border-color: #63bb53
@@ -276,7 +276,7 @@
   .contacts
     &-content
       &__word
-        transition: border-color 0.3s
+        transition: border-color 0.2s
         transition: color 0.2s
         &:hover
           color: #63bb53
@@ -778,3 +778,12 @@
       font-size: 1.2rem
     &__text
       font-size: 1rem
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) 
+  .input
+    line-height: normal
+    padding: 0.3rem 0
+  .input::-ms-clear
+    display: none
+  .modal
+    &__input
+      padding: 0.7rem 2.93rem 0.7rem 1.15rem
