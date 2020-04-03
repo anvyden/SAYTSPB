@@ -34,12 +34,22 @@
     <div class="container">
       <div class="menu">
         <div class="logo menu__logo"><a href="#" class="logo__text"><img src="img/logo.png" alt="Логотип"><span class="logo__link">SAYTSPB</span></a></div>
-        <nav class="nav menu__nav">
-          <a href="#services" class="nav__item">Продвижение</a>
-          <a href="#cases" class="nav__item">Аудит</a>
-          <a href="#price" class="nav__item">Цены</a>
-          <a href="#contacts" class="nav__item">Контакты</a>
-        </nav>
+        <div class="menu__wrapper">
+          <input type="checkbox" class="menu__input" id="check-menu">
+          <label for="check-menu" class="menu__label">
+            <div class="menu__line burger-line burger-line__first"></div>
+            <div class="menu__line burger-line burger-line__second"></div>
+            <div class="menu__line burger-line burger-line__third"></div>
+            <div class="menu__line burger-line burger-line__fourth"></div>
+          </label>
+          <nav class="nav menu__nav">
+            <a href="#hero" class="nav__item nav__item--mobile">Главная</a>
+            <a href="#services" class="nav__item">Продвижение</a>
+            <a href="#cases" class="nav__item">Аудит</a>
+            <a href="#price" class="nav__item">Цены</a>
+            <a href="#contacts" class="nav__item">Контакты</a>
+          </nav>
+        </div>
         <!-- /.nav menu__nav -->
         <div class="contacts menu__contacts">
           <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>

@@ -244,4 +244,10 @@ $(document).ready(function () {
       $(this).addClass('swiper-no-swiping');
       });
     }
+  var hideMenu = window.matchMedia('all and (max-width: 760px)');
+  if (hideMenu.matches) {
+    $('.nav__item').on('click', function (e) {
+    $('#check-menu').prop('checked', false);
+    });
+  }
 });
