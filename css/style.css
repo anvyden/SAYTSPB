@@ -2384,20 +2384,20 @@ img {
     font-weight: 500;
     font-size: 1.4rem;
   }
-  .menu__input:checked ~ .menu__label .burger-line__first {
+  .menu__input:checked ~ .burger-line__first {
     display: none;
   }
-  .menu__input:checked ~ .menu__label .burger-line__second {
+  .menu__input:checked ~ .burger-line__second {
     height: 3px;
     border-radius: 30%;
     transform: translate(50%, 0) rotate(45deg);
   }
-  .menu__input:checked ~ .menu__label .burger-line__third {
+  .menu__input:checked ~ .burger-line__third {
     height: 3px;
     border-radius: 30%;
     transform: translate(50%, 0) rotate(-45deg);
   }
-  .menu__input:checked ~ .menu__label .burger-line__fourth {
+  .menu__input:checked ~ .burger-line__fourth {
     display: none;
   }
 }
