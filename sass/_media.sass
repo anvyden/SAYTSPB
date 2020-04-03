@@ -256,6 +256,23 @@
       &:hover
         &::after
           width: 100%
+  .services
+    &__card
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        max-width: 25.357rem
+        width: 100%
+        height: 0.357rem
+        border-radius: 0 0 5px 5px
+        background-color: $red
+        opacity: 0
+        transition: opacity 0.8s
+      &:hover
+        &::after
+          opacity: 1
   .comments
     &__link
       transition: color 0.2s

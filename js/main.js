@@ -40,6 +40,13 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
+  // $(window).resize(function () {
+  //   if ($(window).width() <= 992) {
+  //     var fixed_offset = 30;
+  //     $('html, body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1300);
+  //     e.preventDefault();
+  //   }
+  // });
 
   // Модальное окно
   var modal = $('.modal'),
@@ -258,4 +265,11 @@ $(document).ready(function () {
     $('#check-menu').prop('checked', false);
     });
   }
+  $(window).resize(function () {
+    if ($(window).width() <= 992) {
+      $('.nav__item').on('click', function (e) {
+      $('#check-menu').prop('checked', false);
+      });
+    }
+  });
 });
