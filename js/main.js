@@ -33,6 +33,13 @@ $(document).ready(function () {
         idTop = $(id).offset().top;
       $('body, html').animate({scrollTop: idTop}, 1300);
   });
+  $(".nav__item").on('click', function(e){
+    if (mobileResponsive.matches) {
+      var fixed_offset = 30;
+      $('html, body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1300);
+      e.preventDefault();
+    }
+  });
 
   // Модальное окно
   var modal = $('.modal'),
@@ -244,8 +251,9 @@ $(document).ready(function () {
       $(this).addClass('swiper-no-swiping');
       });
     }
-  var hideMenu = window.matchMedia('all and (max-width: 760px)');
-  if (hideMenu.matches) {
+  // закрытие бургер-меню при клике по ссылке
+  var mobileResponsive = window.matchMedia('all and (max-width: 992px)');
+  if (mobileResponsive.matches) {
     $('.nav__item').on('click', function (e) {
     $('#check-menu').prop('checked', false);
     });
