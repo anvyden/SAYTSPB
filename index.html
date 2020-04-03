@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Продвижение сайтов в Санкт-Петербурге</title>
 </head>
@@ -89,7 +90,8 @@
     </div>
     <!-- /.statistics -->
     <div class="video">
-      <img src="img/video-play.png" alt="play icon" class="video__play">
+      <a data-fancybox href="https://www.youtube.com/watch?v=ZCaUxwvjQVg" class="video__play">
+      <img src="img/video-play.png" alt="play icon"></a>
     </div>
     <!-- /.video -->
     <section class="section advantages">
@@ -199,7 +201,7 @@
       <div class="container price__container">
         <div class="price__row">
           <h3 class="price__heading">Узнать стоимость</h3>
-        <form action="" class="form price__form">
+        <form action="send.php" method="POST" class="form price__form">
           <div class="price__input-group">
             <label for="price-user-name" class="label form__label price__label">ИМЯ</label>
             <!-- /.label form__label price__label -->
@@ -559,7 +561,7 @@
           </div>
           <!-- /.contacts-block__content contacts-content -->
           <div class="contacts-form">
-            <form action="" class="form contacts-block__form">
+            <form action="send.php" method="POST" class="form contacts-block__form">
               <div class="contacts-block__input-group">
                 <label for="contacts-user-name" class="label form__label contacts-block__label">ИМЯ</label>
                 <!-- /.label form__label price__label -->
@@ -609,7 +611,7 @@
   <!-- /.footer -->
   <div class="modal">
     <div class="modal__dialog">
-      <form action="" class="form modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <div class="modal__input-group">
           <input type="text" autocomplete="off" name="userName" class="input form__input modal__input" id="modal-user-name" placeholder="Ваше имя">
         </div>
@@ -624,10 +626,18 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+  <div class="thanks">
+    <div class="thanks__dialog">
+      <strong class="thanks__heading">Спасибо за то, что обратились к нам!</strong>
+      <p class="thanks__text">Мы свяжемся с вами в <span class="thanks__underline">ближайшее время</span>.</p>
+    </div>
+  </div>
+  <!-- /.thanks -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

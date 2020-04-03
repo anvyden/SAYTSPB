@@ -1690,6 +1690,57 @@ img {
   padding: 0.9rem 3.6rem;
 }
 
+.thanks {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 299;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.thanks__dialog {
+  position: relative;
+  max-width: 47rem;
+  border-radius: 25px;
+  background-color: #ffffff;
+  background-image: url("../img/cases/cases-bg.png"), url("../img/footer-bg.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  padding: 2rem 4rem;
+}
+
+.thanks__heading {
+  display: block;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.thanks__text {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.thanks__underline {
+  color: #ff5a3c;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1555px) {
   .hero__img {
     margin-top: 5rem;

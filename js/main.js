@@ -52,8 +52,18 @@ $(document).ready(function () {
       });
 
   // Окно благодарности
-  // thanks = $('.thanks')
+  thanks = $('.thanks')
   // closeBtnThanks = $('.thanks__close')
+  thanks.on('click', function (event) {
+    if ($(event.target).is('thanks__dialog'))
+    event.stopPropagation();
+    else if ($(event.target).is('.thanks'))
+    thanks.removeClass('thanks--visible');
+  });
+  $(document).on('keydown', function(event) {
+    if (event.keyCode === 27 && $('.thanks').hasClass('thanks--visible'))
+    thanks.removeClass('thanks--visible');
+  });
 
   // Валидация формы (price)
   $('.price__form').validate({
@@ -92,6 +102,24 @@ $(document).ready(function () {
       userQuestion: {
         required: "Заполните поле"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $('.thanks').addClass('thanks--visible');
+          $(form)[0].reset();
+          if ($('.thanks').hasClass('thanks--visible')) {
+            modal.removeClass('modal--visible');
+          }
+        },
+        error: function (response) {
+          console.error('Ошибка запроса');
+        }
+        // ym(61243786,'reachGoal','submitForm'); return true;
+      });
     },
   });
 
@@ -136,6 +164,24 @@ $(document).ready(function () {
         required: "Заполните поле"
       }
     },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $('.thanks').addClass('thanks--visible');
+          $(form)[0].reset();
+          if ($('.thanks').hasClass('thanks--visible')) {
+            modal.removeClass('modal--visible');
+          }
+        },
+        error: function (response) {
+          console.error('Ошибка запроса');
+        }
+      // ym(61243786,'reachGoal','submitForm'); return true;
+      });
+    },
   });
 
   //Валидация формы (modal)
@@ -163,6 +209,24 @@ $(document).ready(function () {
         required: "Заполните поле",
         minlength: "Номер не может быть короче 11 цифр"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $('.thanks').addClass('thanks--visible');
+          $(form)[0].reset();
+          if ($('.thanks').hasClass('thanks--visible')) {
+            modal.removeClass('modal--visible');
+          }
+        },
+        error: function (response) {
+          console.error('Ошибка запроса');
+        }
+      // ym(61243786,'reachGoal','submitForm'); return true;
+      });
     },
   });
 
