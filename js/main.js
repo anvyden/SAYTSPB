@@ -54,4 +54,118 @@ $(document).ready(function () {
   // Окно благодарности
   // thanks = $('.thanks')
   // closeBtnThanks = $('.thanks__close')
+
+  // Валидация формы (price)
+  $('.price__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userAdress: {
+        required: true
+      },
+      userQuestion: {
+        required: true
+      }
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть короче двух букв",
+        maxlength: "Имя не должно быть больше 15 букв"
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите в формате: name@domain.com"
+      },
+      userAdress: {
+        required: "Заполните поле"
+      },
+      userQuestion: {
+        required: "Заполните поле"
+      }
+    },
+  });
+
+
+  // Валидация формы (contacts)
+  $('.contacts-block__form').validate({
+    errorClass: "contacts-block__invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
+      userQuestion: {
+        required: true
+      }
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть короче двух букв",
+        maxlength: "Имя не должно быть больше 15 букв"
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите в формате: name@domain.com"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Номер не может быть короче 11 цифр"
+      },
+      userQuestion: {
+        required: "Заполните поле"
+      }
+    },
+  });
+
+  //Валидация формы (modal)
+  $('.modal__form').validate({
+    errorClass: "modal__invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 17
+      }
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть короче двух букв",
+        maxlength: "Имя не должно быть больше 15 букв"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Номер не может быть короче 11 цифр"
+      }
+    },
+  });
+
+  // маска для номера телефона
+  $('[type=tel]').mask('+7(000) 000-00-00');
 });

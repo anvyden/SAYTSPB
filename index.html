@@ -203,25 +203,25 @@
           <div class="price__input-group">
             <label for="price-user-name" class="label form__label price__label">ИМЯ</label>
             <!-- /.label form__label price__label -->
-            <input type="text" autocomplete="off" class="input form__input price__input" id="price-user-name" placeholder="Иван Иванов">
+            <input type="text" autocomplete="off" name="userName" class="input form__input price__input" id="price-user-name" placeholder="Иван Иванов">
           </div>
           <!-- /.price__input-group -->
           <div class="price__input-group">
             <label for="price-user-email" class="label form__label price__label">E-MAIL</label> 
             <!-- /.label form__label price__label -->
-            <input type="email" autocomplete="off" class="input form__input price__input" id="price-user-email" placeholder="ivanov@gmail.com">
+            <input type="email" autocomplete="off" name="userEmail" class="input form__input price__input" id="price-user-email" placeholder="ivanov@gmail.com">
           </div>
           <!-- /.price__input-group -->
           <div class="price__input-group">
             <label for="price-user-adress" class="label form__label price__label">АДРЕС ВЕБ-САЙТА</label> 
             <!-- /.label form__label price__label -->
-            <input type="text" autocomplete="off" class="input form__input price__input" id="price-user-adress" placeholder="tatsianapavlenko.ru">
+            <input type="text" autocomplete="off" name="userAdress" class="input form__input price__input" id="price-user-adress" placeholder="tatsianapavlenko.ru">
           </div>
           <!-- /.price__input-group -->
           <div class="price__input-group">
             <label for="price-user-message" class="label form__label price__label">СООБЩЕНИЕ</label> 
             <!-- /.label form__label price__label -->
-            <input type="text" autocomplete="off" class="input form__input price__input" id="price-user-message" placeholder="Введите Ваше сообщение">
+            <input type="text" autocomplete="off" name="userQuestion" class="input form__input price__input" id="price-user-message" placeholder="Введите Ваше сообщение">
           </div>
           <!-- /.price__input-group -->
           <button class="button price__button">Узнать стоимость</button>
@@ -563,25 +563,25 @@
               <div class="contacts-block__input-group">
                 <label for="contacts-user-name" class="label form__label contacts-block__label">ИМЯ</label>
                 <!-- /.label form__label price__label -->
-                <input type="text" autocomplete="off" class="input form__input contacts-block__input" id="contacts-user-name" placeholder="Иван Иванов">
+                <input type="text" autocomplete="off" name="userName" class="input form__input contacts-block__input" id="contacts-user-name" placeholder="Иван Иванов">
               </div>
               <!-- /.price__input-group -->
               <div class="contacts-block__input-group">
                 <label for="contacts-user-email" class="label form__label contacts-block__label">E-MAIL</label> 
                 <!-- /.label form__label price__label -->
-                <input type="email" autocomplete="off" class="input form__input contacts-block__input" id="contacts-user-email" placeholder="ivanov@gmail.com">
+                <input type="email" autocomplete="off" name="userEmail"  class="input form__input contacts-block__input" id="contacts-user-email" placeholder="ivanov@gmail.com">
               </div>
               <!-- /.price__input-group -->
               <div class="contacts-block__input-group">
                 <label for="contacts-user-phone" class="label form__label contacts-block__label">ТЕЛЕФОН</label> 
                 <!-- /.label form__label price__label -->
-                <input type="tel" autocomplete="off" class="input form__input contacts-block__input" id="contacts-user-phone" placeholder="+7 999 888-88-88">
+                <input type="tel" autocomplete="off" name="userPhone"  class="input form__input contacts-block__input" id="contacts-user-phone" placeholder="+7 999 888-88-88">
               </div>
               <!-- /.price__input-group -->
               <div class="contacts-block__input-group">
                 <label for="contacts-user-message" class="label form__label contacts-block__label">СООБЩЕНИЕ</label> 
                 <!-- /.label form__label price__label -->
-                <input type="text" autocomplete="off" class="input form__input contacts-block__input" id="contacts-user-message" placeholder="Введите Ваше сообщение">
+                <input type="text" autocomplete="off" name="userQuestion"  class="input form__input contacts-block__input" id="contacts-user-message" placeholder="Введите Ваше сообщение">
               </div>
               <!-- /.price__input-group -->
               <button class="button contacts-block__button">Отправить</button>
@@ -611,11 +611,11 @@
     <div class="modal__dialog">
       <form action="" class="form modal__form">
         <div class="modal__input-group">
-          <input type="text" autocomplete="off" class="input form__input modal__input" id="modal-user-name" placeholder="Ваше имя">
+          <input type="text" autocomplete="off" name="userName" class="input form__input modal__input" id="modal-user-name" placeholder="Ваше имя">
         </div>
         <!-- /.price__input-group -->
         <div class="modal__input-group">
-          <input type="tel" autocomplete="off" class="input form__input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона">
+          <input type="tel" autocomplete="off" name="userPhone" class="input form__input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона">
         </div>
         <!-- /.price__input-group -->
         <button class="button modal__button">Отправить</button>
@@ -626,6 +626,8 @@
   <!-- /.modal -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

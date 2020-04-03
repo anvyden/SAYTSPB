@@ -392,6 +392,40 @@ template {
   text-transform: uppercase;
 }
 
+div.invalid {
+  position: absolute;
+  bottom: -0.964rem;
+  color: tomato;
+  font-size: 0.87rem;
+}
+
+input.invalid {
+  border-bottom: 1px solid tomato;
+}
+
+div.contacts-block__invalid {
+  position: absolute;
+  bottom: -1rem;
+  color: #2c2c2d;
+  font-size: 0.87rem;
+}
+
+input.contacts-block__invalid {
+  border-bottom: 1px solid #000000;
+}
+
+div.modal__invalid {
+  position: absolute;
+  left: 0.571rem;
+  bottom: -1rem;
+  color: tomato;
+  font-size: 0.87rem;
+}
+
+input.modal__invalid {
+  border: 1px solid tomato;
+}
+
 ::-moz-placeholder, :-moz-placeholder {
   opacity: 1;
 }
@@ -966,6 +1000,7 @@ img {
 }
 
 .price__input-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 1.65rem;
@@ -1385,6 +1420,7 @@ img {
 }
 
 .contacts-block__input-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
@@ -1640,6 +1676,7 @@ img {
 }
 
 .modal__input-group {
+  position: relative;
   margin-bottom: 1.4rem;
   margin-right: 0.1rem;
 }
@@ -2332,6 +2369,15 @@ img {
   }
   .time__work-time {
     font-size: 1.3rem;
+  }
+  div.invalid {
+    bottom: -1.1rem;
+  }
+  div.contacts-block__invalid {
+    bottom: -1.1rem;
+  }
+  div.modal__invalid {
+    bottom: -1.1rem;
   }
 }
 

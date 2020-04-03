@@ -28,5 +28,33 @@
   font-weight: 300
   color: #939292
   text-transform: uppercase
+div
+  &.invalid
+    position: absolute
+    bottom: -0.964rem
+    color: tomato
+    font-size: 0.87rem
+input
+  &.invalid
+    border-bottom: 1px solid tomato
+div
+  &.contacts-block__invalid
+    position: absolute
+    bottom: -1rem
+    color: $black
+    font-size: 0.87rem
+input
+  &.contacts-block__invalid
+    border-bottom: 1px solid #000000
+div
+  &.modal__invalid
+    position: absolute
+    left: 0.571rem
+    bottom: -1rem
+    color: tomato
+    font-size: 0.87rem
+input
+  &.modal__invalid
+    border: 1px solid tomato
 ::-moz-placeholder, :-moz-placeholder 
     opacity: 1
