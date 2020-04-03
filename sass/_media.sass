@@ -47,6 +47,7 @@
   .time
     &__work
       font-size: 1.1rem
+      margin-top: 0
       &-heading
         font-weight: 700
     &__weekend
@@ -297,6 +298,8 @@
       &:hover
         color: $red
 @media screen and ( max-width: 992px )
+  .section
+    padding: 2.5rem 0
   .nav
     display: none
   .hero
@@ -332,6 +335,9 @@
   .statistics
     background-size: contain  
   .advantages
+    &__section-title
+      margin-top: 0
+      margin-bottom: 3rem
     &__card
       flex-basis: 45%
       &:nth-child(1)
@@ -362,18 +368,29 @@
         margin-right: 0
         max-width: none
   .price
+    padding: 2.5rem 0
     &__row
+      padding: 2.5rem 0
       min-width: 100%
     &__container
       background: $light
   .services
     background: #e3fbdd
+    &__text
+      margin-bottom: 3rem
     &__row
       justify-content: space-around
     &__card
       width: auto
       flex-basis: 45%
+      &:nth-child(5)
+        margin-bottom: 0
   .cases
+    &__section-title
+      margin-top: 0
+      margin-bottom: 2.5rem
+    &__button
+      margin-top: 2rem
     &-swiper
       &-text
         font-size: 1rem
@@ -389,6 +406,10 @@
     &__col-45
       width: 46%
   .comments
+    &__section-title
+      margin-bottom: 2rem
+    &__button
+      margin-top: 2.5rem
     &-swiper
       &__text
         font-size: 1.1rem
@@ -397,10 +418,14 @@
       &-button-next
         right: 6.8%
   .news
+    &__section-title
+      margin-bottom: 2rem
     &-swiper
       &__container
         right: 0
   .contacts
+    &-block
+      padding: 2.5rem 0
     &-form
       width: 50%
     &-content
@@ -419,12 +444,16 @@
       font-size: 1rem
     &__work-time
       font-size: 1rem
+  .footer
+    padding: 2.5rem 0
 @media screen and ( max-width: 760px )
   html
     font-size: 11px
   .hero
     background: url('../img/hero-bg-1.png') no-repeat
     padding-bottom: 10rem
+    &__title
+      margin-top: 4rem
     &__content
       width: 100%
     &__img
@@ -466,7 +495,7 @@
       // &:nth-child(6)
       //   max-width: 20.55rem
   .services
-    padding-bottom: 5rem
+    padding-bottom: 2.5rem
     &__card
       &:nth-child(3)
         .card__title
@@ -616,6 +645,8 @@
       &__text
         font-size: 1.05rem
   .advantages
+    &__section-title
+      margin-bottom: 4rem
     &__row
       justify-content: center
     &__card
@@ -651,6 +682,8 @@
   .services
     &__card
       flex-basis: 100%
+      &:nth-child(6)
+        display: none
   .cases
     &__button
       margin-top: 2rem

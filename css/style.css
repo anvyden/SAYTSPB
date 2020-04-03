@@ -1176,6 +1176,7 @@ img {
   background-position-y: 26.8%;
   background-size: 111.3%;
   padding-top: 0rem;
+  padding-bottom: 5.6rem;
 }
 
 .comments__section-title {
@@ -1274,7 +1275,7 @@ img {
 }
 
 .news {
-  padding-top: 4.79rem;
+  padding-top: 4.19rem;
   padding-bottom: 6.6rem;
   background-color: #e3fbdd;
 }
@@ -1802,6 +1803,7 @@ img {
   }
   .time__work {
     font-size: 1.1rem;
+    margin-top: 0;
   }
   .time__work-heading {
     font-weight: 700;
@@ -2099,6 +2101,9 @@ img {
 }
 
 @media screen and (max-width: 992px) {
+  .section {
+    padding: 2.5rem 0;
+  }
   .nav {
     display: none;
   }
@@ -2142,6 +2147,10 @@ img {
   .statistics {
     background-size: contain;
   }
+  .advantages__section-title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
   .advantages__card {
     flex-basis: 45%;
   }
@@ -2181,7 +2190,11 @@ img {
     margin-right: 0;
     max-width: none;
   }
+  .price {
+    padding: 2.5rem 0;
+  }
   .price__row {
+    padding: 2.5rem 0;
     min-width: 100%;
   }
   .price__container {
@@ -2190,12 +2203,25 @@ img {
   .services {
     background: #e3fbdd;
   }
+  .services__text {
+    margin-bottom: 3rem;
+  }
   .services__row {
     justify-content: space-around;
   }
   .services__card {
     width: auto;
     flex-basis: 45%;
+  }
+  .services__card:nth-child(5) {
+    margin-bottom: 0;
+  }
+  .cases__section-title {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
+  .cases__button {
+    margin-top: 2rem;
   }
   .cases-swiper-text {
     font-size: 1rem;
@@ -2215,6 +2241,12 @@ img {
   .cases__col-45 {
     width: 46%;
   }
+  .comments__section-title {
+    margin-bottom: 2rem;
+  }
+  .comments__button {
+    margin-top: 2.5rem;
+  }
   .comments-swiper__text {
     font-size: 1.1rem;
   }
@@ -2224,8 +2256,14 @@ img {
   .comments-swiper-button-next {
     right: 6.8%;
   }
+  .news__section-title {
+    margin-bottom: 2rem;
+  }
   .news-swiper__container {
     right: 0;
+  }
+  .contacts-block {
+    padding: 2.5rem 0;
   }
   .contacts-form {
     width: 50%;
@@ -2251,6 +2289,9 @@ img {
   .time__work-time {
     font-size: 1rem;
   }
+  .footer {
+    padding: 2.5rem 0;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -2260,6 +2301,9 @@ img {
   .hero {
     background: url("../img/hero-bg-1.png") no-repeat;
     padding-bottom: 10rem;
+  }
+  .hero__title {
+    margin-top: 4rem;
   }
   .hero__content {
     width: 100%;
@@ -2298,7 +2342,7 @@ img {
     margin-top: -1rem;
   }
   .services {
-    padding-bottom: 5rem;
+    padding-bottom: 2.5rem;
   }
   .services__card:nth-child(3) .card__title {
     margin-bottom: 0.8rem;
@@ -2488,6 +2532,9 @@ img {
   .section-title__text {
     font-size: 1.05rem;
   }
+  .advantages__section-title {
+    margin-bottom: 4rem;
+  }
   .advantages__row {
     justify-content: center;
   }
@@ -2535,6 +2582,9 @@ img {
   }
   .services__card {
     flex-basis: 100%;
+  }
+  .services__card:nth-child(6) {
+    display: none;
   }
   .cases__button {
     margin-top: 2rem;

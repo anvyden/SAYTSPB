@@ -232,4 +232,16 @@ $(document).ready(function () {
 
   // маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00');
+
+  // Прокручивание слайдера на мобильной версии с помощью свайпа
+  var mql = window.matchMedia('all and (max-width: 570px)');
+    if (mql.matches) {
+      $('.swiper-wrapper').each(function () {
+        $(this).removeClass('swiper-no-swiping');
+        });
+    } else {
+      $('.swiper-wrapper').each(function () {
+        $(this).addClass('swiper-no-swiping');
+        });
+    }
 });
