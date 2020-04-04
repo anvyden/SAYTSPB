@@ -2561,6 +2561,9 @@ img {
   .contacts-block__input-group:last-of-type {
     margin-bottom: 2rem;
   }
+  .contacts-block__button {
+    align-self: center;
+  }
   .contacts-form {
     width: 100%;
   }

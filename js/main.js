@@ -58,11 +58,15 @@ $(document).ready(function () {
         if ($(event.target).is('modal__dialog'))
         event.stopPropagation();
         else if ($(event.target).is('.modal'))
-        modal.toggleClass('modal--visible');
+        modal.toggleClass('modal--visible'),
+        modalForm.resetForm(),
+        $('.modal__form')[0].reset();
       });
       $(document).on('keydown', function(event) {
         if (event.keyCode === 27 && $('.modal').hasClass('modal--visible'))
-        modal.toggleClass('modal--visible');
+        modal.toggleClass('modal--visible'),
+        modalForm.resetForm(),
+        $('.modal__form')[0].reset();
       });
 
   // Окно благодарности
@@ -86,15 +90,15 @@ $(document).ready(function () {
     rules: {
       userName: {
         required: true,
-        minlength: 2,
-        maxlength: 15
+        minlength: 2
       },
       userEmail: {
         required: true,
         email: true
       },
       userAdress: {
-        required: true
+        required: true,
+        url: true
       },
       userQuestion: {
         required: true
@@ -103,15 +107,15 @@ $(document).ready(function () {
     messages: {
       userName: {
         required: "Заполните поле",
-        minlength: "Имя не должно быть короче двух букв",
-        maxlength: "Имя не должно быть больше 15 букв"
+        minlength: "Имя не должно быть короче двух букв"
       },
       userEmail: {
         required: "Заполните поле",
         email: "Введите в формате: name@domain.com"
       },
       userAdress: {
-        required: "Заполните поле"
+        required: "Заполните поле",
+        url: "Введите в формате: https://www.name.com"
       },
       userQuestion: {
         required: "Заполните поле"
@@ -128,7 +132,7 @@ $(document).ready(function () {
           if ($('.thanks').hasClass('thanks--visible')) {
             modal.removeClass('modal--visible');
           }
-          ym(94722919,'reachGoal','submitForm'); return true;
+          ym(61607104,'reachGoal','submitForm'); return true;
         },
         error: function (response) {
           console.error('Ошибка запроса' + response);
@@ -145,8 +149,7 @@ $(document).ready(function () {
     rules: {
       userName: {
         required: true,
-        minlength: 2,
-        maxlength: 15
+        minlength: 2
       },
       userEmail: {
         required: true,
@@ -163,8 +166,7 @@ $(document).ready(function () {
     messages: {
       userName: {
         required: "Заполните поле",
-        minlength: "Имя не должно быть короче двух букв",
-        maxlength: "Имя не должно быть больше 15 букв"
+        minlength: "Имя не должно быть короче двух букв"
       },
       userEmail: {
         required: "Заполните поле",
@@ -189,7 +191,7 @@ $(document).ready(function () {
           if ($('.thanks').hasClass('thanks--visible')) {
             modal.removeClass('modal--visible');
           }
-          ym(94722919,'reachGoal','submitForm'); return true;
+          ym(61607104,'reachGoal','submitForm'); return true;
         },
         error: function (response) {
           console.error('Ошибка запроса' + response);
@@ -199,14 +201,13 @@ $(document).ready(function () {
   });
 
   //Валидация формы (modal)
-  $('.modal__form').validate({
+  var modalForm = $('.modal__form').validate({
     errorClass: "modal__invalid",
     errorElement: "div",
     rules: {
       userName: {
         required: true,
-        minlength: 2,
-        maxlength: 15
+        minlength: 2
       },
       userPhone: {
         required: true,
@@ -217,7 +218,6 @@ $(document).ready(function () {
       userName: {
         required: "Заполните поле",
         minlength: "Имя не должно быть короче двух букв",
-        maxlength: "Имя не должно быть больше 15 букв"
       },
       userPhone: {
         required: "Заполните поле",
@@ -235,7 +235,7 @@ $(document).ready(function () {
           if ($('.thanks').hasClass('thanks--visible')) {
             modal.removeClass('modal--visible');
           }
-          ym(94723897,'reachGoal','callBack'); return true;
+          ym(61607104,'reachGoal','callBack'); return true;
         },
         error: function (response) {
           console.error('Ошибка запроса' + response);
@@ -243,7 +243,7 @@ $(document).ready(function () {
       });
     },
   });
-
+  
   // маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00');
 
