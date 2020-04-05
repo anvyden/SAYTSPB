@@ -1634,6 +1634,23 @@ img {
   text-decoration: none;
 }
 
+.footer__made {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 1.8rem;
+  margin-left: 1rem;
+  font-size: 1.143rem;
+  font-weight: 500;
+}
+
+.footer__made-link {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: #151515;
+  border-bottom: 1px solid #151515;
+}
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -2141,6 +2158,14 @@ img {
   }
   .footer__copyright-link:hover {
     color: #ff5a3c;
+  }
+  .footer__made-link {
+    transition: color 0.2s;
+    transition: border-bottom 0.08s;
+  }
+  .footer__made-link:hover {
+    color: #ff5a3c;
+    border-bottom: 1px solid #ff5a3c;
   }
   .video__play:hover {
     box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.3);
