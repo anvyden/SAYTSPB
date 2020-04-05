@@ -152,9 +152,13 @@
       &-button-prev
         left: 6.8%
         width: 15px
+        &::after
+          font-size: 28px
       &-button-next
         right: 6.8%
         width: 15px
+        &::after
+          font-size: 28px
       &-text
         font-size: 1.1rem
     &-statistics
@@ -170,9 +174,13 @@
       &-button-prev
         left: 13%
         width: 15px
+        &::after
+          font-size: 28px
       &-button-next
         right: 13%
         width: 15px
+        &::after
+          font-size: 28px
       &__text
         margin-left: auto
         margin-right: auto 
@@ -315,6 +323,25 @@
       transition: color 0.3s
       &:hover
         color: $red
+  .video
+    &__play
+      &:hover
+        box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.3)
+        border-radius: 50%
+        width: 122px
+        height: 122px
+  .cases
+    &-swiper
+      &-button-prev, &-button-next
+        &:hover
+          &::after
+            color: $red
+  .comments
+    &-swiper
+      &-button-prev, &-button-next
+        &:hover
+          &::after
+            color: $red
 @media screen and ( max-width: 992px )
   .section
     padding: 2.5rem 0
@@ -799,9 +826,13 @@
       &-button-prev
         width: 12px
         left: 3px
+        &::after
+          font-size: 22px
       &-button-next
         width: 12px
         right: 3px
+        &::after
+          font-size: 22px
       &-text
         font-size: 1rem
   .comments
@@ -814,12 +845,16 @@
         max-width: 30.727rem
       &-button-prev
         width: 12px
-        top: 55%
+        top: 58%
         left: 2%
+        &::after
+          font-size: 22px
       &-button-next
         width: 12px
-        top: 55%
+        top: 58%
         right: 2%
+        &::after
+          font-size: 22px
   .news
     &-swiper
       &__container
