@@ -20,11 +20,11 @@ $(document).ready(function () {
       prevEl: '.news-swiper-button-prev',
     },
   })
-  var newsNext = $('.news-swiper-button-next');
-  var newsPrev = $('.news-swiper-button-prev');
-  var newsPositionPrev = newsPrev.position();
-  newsNext.css('left', newsPositionPrev.left + newsPrev.width() + 22.5)
-
+  // var newsNext = $('.news-swiper-button-next');
+  // var newsPrev = $('.news-swiper-button-prev');
+  // var newsPositionPrev = newsPrev.position();
+  // newsNext.css('left', newsPositionPrev.left + newsPrev.width() + 22.5)
+  
 
   // Плавная прокрутка при клике на ссылки меню
   $('.nav__item, .logo__text, .footer__logo-link, .footer__company-link').on('click', function(e) {
